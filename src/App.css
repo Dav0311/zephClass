@@ -1,0 +1,48 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  color: white;
+}
+
+/*todo list css*/
+.container{
+  background-color: white;
+  border-radius: 0px;
+  padding: 20px;
+
+}
+h1{
+  color: black;
+}
+p{
+  color: grey;
+}
+input{
+  width: 80%;
+  padding: 10px;
+  font-size: medium;
+  font-style: italic;
+}
+.input{
+  display: flex;
+  flex-direction: row;
+}
+.btn{
+  background-color: rgb(78, 153, 223);
+  border-radius: 0px;
+}
+.list{
+  padding-bottom: 20px;
+}
+.todo{
+  border-bottom: rgb(117, 112, 112, 0.5) solid ;
+}
+.btn2{
+  background-color:rgb(226, 79, 59);
+  border-radius: 0px;
+  width: 80%;
+}
+
+

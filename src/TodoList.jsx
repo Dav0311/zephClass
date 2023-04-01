@@ -28,7 +28,11 @@ function TodoLIst() {
             
         </div>
         <div className="button">
-          <button className='btn2'>clear all completed tasks</button>
+          <button className='btn2'
+          onClick={()=>{
+            console.log("this button has been clicked");
+          }}
+          >clear all completed tasks</button>
         </div>
      </div>
     </div>

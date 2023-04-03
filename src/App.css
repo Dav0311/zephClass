@@ -14,7 +14,7 @@
 
 }
 h1{
-  color: black;
+  color: rgb(250, 246, 246);
 }
 p{
   color: grey;
@@ -24,25 +24,31 @@ input{
   padding: 10px;
   font-size: medium;
   font-style: italic;
+  
 }
-.input{
+option{
+  padding: 10px;
+}
+input{
   display: flex;
   flex-direction: row;
+  width: 90%;
+  margin-bottom: 10px;
 }
-.btn{
-  background-color: rgb(78, 153, 223);
-  border-radius: 0px;
+button{
+ background-color: rgb(50, 129, 233);
+ width: 100%;
 }
-.list{
-  padding-bottom: 20px;
-}
+
 .todo{
   border-bottom: rgb(117, 112, 112, 0.5) solid ;
 }
-.btn2{
-  background-color:rgb(226, 79, 59);
-  border-radius: 0px;
-  width: 80%;
+label{
+  color: black;
 }
-
+select{
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+}
 

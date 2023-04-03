@@ -1,41 +1,42 @@
 import { useState } from 'react'
 import './App.css'
-
+import { data } from './data'
+import { Alert } from 'bootstrap';
 
 function TodoLIst() {
+  const [todo, setTodo] = useState("");
+const clickhandler=()=>{
+ //alert(todo);
+}
+const change = event =>{
+  setTodo(event.target.value)
   
-
-    const todo ="this is the todo....";
+}
+   
 
   return (
     <div className="container">
-     <h1>the Todo List</h1>
-     <div className="content">
-        <div className="input">
-        <input type="button" value="Add your list..."/>
-        <button className='btn'>ADD</button>
-        </div>    
-        <div className="list">
-            <div className="todo">
-            <p>{todo} </p>
-            </div>
-            <div className="todo">
+      
+        <form action="">
+          <div className="input">
+            <label>enter your todo: </label>
+            <input onChange={change} 
+            type="text" value={todo
+            }/>
+            <button onClick={clickhandler}>add</button>
+          </div>
+          <select name="" id="">
+            <option value="ronald">ronald</option>
+            <option value="dave"> dave</option>
+          </select>
+         </form>
+
+          <div className="todo">
             <p>{todo}</p>
-            </div>
-            <div className="todo">
-            <p>{todo}</p>
-            </div>
-            
-        </div>
-        <div className="button">
-          <button className='btn2'
-          onClick={()=>{
-            console.log("this button has been clicked");
-          }}
-          >clear all completed tasks</button>
-        </div>
+          </div>
+          <button>clear to</button>
      </div>
-    </div>
+    
   )
 }
 
